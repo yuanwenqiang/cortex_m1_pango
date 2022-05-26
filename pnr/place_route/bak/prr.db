@@ -135,25 +135,6 @@
             <data>YES</data>
         </row>
         <row>
-            <data>SD_MISO</data>
-            <data>input</data>
-            <data>U13</data>
-            <data>BANKR2</data>
-            <data>3.3</data>
-            <data>LVTTL33</data>
-            <data>NA</data>
-            <data>PULLUP</data>
-            <data>NA</data>
-            <data>NOHYS</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>YES</data>
-        </row>
-        <row>
             <data>SD_MOSI</data>
             <data>output</data>
             <data>U14</data>
@@ -524,6 +505,538 @@
             <data>4</data>
             <data>NONE</data>
             <data>F</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[0]</data>
+            <data>output</data>
+            <data>T18</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[1]</data>
+            <data>output</data>
+            <data>T17</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[2]</data>
+            <data>output</data>
+            <data>U18</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[3]</data>
+            <data>output</data>
+            <data>U17</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[4]</data>
+            <data>output</data>
+            <data>M14</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[5]</data>
+            <data>output</data>
+            <data>M13</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[6]</data>
+            <data>output</data>
+            <data>L15</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_b[7]</data>
+            <data>output</data>
+            <data>L14</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_dclk</data>
+            <data>output</data>
+            <data>L18</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_de</data>
+            <data>output</data>
+            <data>L17</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[0]</data>
+            <data>output</data>
+            <data>R15</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[1]</data>
+            <data>output</data>
+            <data>R14</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[2]</data>
+            <data>output</data>
+            <data>T16</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[3]</data>
+            <data>output</data>
+            <data>R16</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[4]</data>
+            <data>output</data>
+            <data>U16</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[5]</data>
+            <data>output</data>
+            <data>V16</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[6]</data>
+            <data>output</data>
+            <data>V18</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_g[7]</data>
+            <data>output</data>
+            <data>V17</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_hs</data>
+            <data>output</data>
+            <data>N18</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[0]</data>
+            <data>output</data>
+            <data>T11</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[1]</data>
+            <data>output</data>
+            <data>R11</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[2]</data>
+            <data>output</data>
+            <data>P12</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[3]</data>
+            <data>output</data>
+            <data>P11</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[4]</data>
+            <data>output</data>
+            <data>T13</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[5]</data>
+            <data>output</data>
+            <data>R13</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[6]</data>
+            <data>output</data>
+            <data>P13</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_r[7]</data>
+            <data>output</data>
+            <data>P14</data>
+            <data>BANKR2</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>YES</data>
+        </row>
+        <row>
+            <data>lcd_vs</data>
+            <data>output</data>
+            <data>N16</data>
+            <data>BANKR1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>4</data>
+            <data>PULLUP</data>
+            <data>S</data>
             <data>NA</data>
             <data>NA</data>
             <data>NA</data>
@@ -3349,17 +3862,17 @@
             <data>L18</data>
             <data>IOBD_152_166</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_dclk</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>L17</data>
             <data>IOBS_152_165</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_de</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>L13</data>
@@ -3397,17 +3910,17 @@
             <data>M13</data>
             <data>IOBD_152_146</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[5]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>M14</data>
             <data>IOBS_152_145</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[4]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>M18</data>
@@ -3429,9 +3942,9 @@
             <data>N18</data>
             <data>IOBD_152_138</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_hs</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>N17</data>
@@ -3453,25 +3966,25 @@
             <data>N16</data>
             <data>IOBS_152_133</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_vs</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>L15</data>
             <data>IOBD_152_130</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[6]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>L14</data>
             <data>IOBS_152_129</data>
             <data>BANKR1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[7]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>R10</data>
@@ -3509,9 +4022,9 @@
             <data>U13</data>
             <data>IOBD_152_110</data>
             <data>BANKR2</data>
-            <data>SD_MISO</data>
-            <data>input</data>
-            <data>YES</data>
+            <data></data>
+            <data></data>
+            <data></data>
         </row>
         <row>
             <data>V13</data>
@@ -3557,81 +4070,81 @@
             <data>R11</data>
             <data>IOBD_152_90</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[1]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>T11</data>
             <data>IOBS_152_89</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[0]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>P11</data>
             <data>IOBD_152_86</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[3]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>P12</data>
             <data>IOBR_152_85</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[2]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>V18</data>
             <data>IOBD_152_82</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[6]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>V17</data>
             <data>IOBS_152_81</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[7]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>U18</data>
             <data>IOBD_152_78</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[2]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>U17</data>
             <data>IOBS_152_77</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[3]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>T18</data>
             <data>IOBD_152_74</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[0]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>T17</data>
             <data>IOBS_152_73</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_b[1]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>R17</data>
@@ -3669,17 +4182,17 @@
             <data>R16</data>
             <data>IOBD_152_42</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[3]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>T16</data>
             <data>IOBS_152_41</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[2]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>U14</data>
@@ -3717,65 +4230,65 @@
             <data>V16</data>
             <data>IOBD_152_22</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[5]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>U16</data>
             <data>IOBS_152_21</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[4]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>R14</data>
             <data>IOBD_152_18</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[1]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>R15</data>
             <data>IOBS_152_17</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_g[0]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>R13</data>
             <data>IOBD_152_14</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[5]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>T13</data>
             <data>IOBS_152_13</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[4]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>P13</data>
             <data>IOBD_152_10</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[6]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>P14</data>
             <data>IOBS_152_9</data>
             <data>BANKR2</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>lcd_r[7]</data>
+            <data>output</data>
+            <data>YES</data>
         </row>
         <row>
             <data>N13</data>
@@ -3821,56 +4334,56 @@
         </row>
         <row>
             <data>Use of CLMA</data>
-            <data>2486</data>
+            <data>2476</data>
             <data>3274</data>
             <data>76</data>
             <row>
                 <data>  FF</data>
-                <data>4224</data>
+                <data>4119</data>
                 <data>19644</data>
-                <data>22</data>
+                <data>21</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>6937</data>
+                <data>6852</data>
                 <data>13096</data>
-                <data>53</data>
+                <data>52</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>2455</data>
+                <data>2344</data>
                 <data>13096</data>
-                <data>19</data>
+                <data>18</data>
             </row>
         </row>
         <row>
             <data>Use of CLMS</data>
-            <data>859</data>
+            <data>827</data>
             <data>1110</data>
-            <data>77</data>
+            <data>75</data>
             <row>
                 <data>  FF</data>
-                <data>1094</data>
+                <data>1261</data>
                 <data>6660</data>
-                <data>16</data>
+                <data>19</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>2404</data>
+                <data>2095</data>
                 <data>4440</data>
-                <data>54</data>
+                <data>47</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>565</data>
+                <data>693</data>
                 <data>4440</data>
-                <data>13</data>
+                <data>16</data>
             </row>
             <row>
                 <data>  Distributed RAM</data>
-                <data>608</data>
+                <data>96</data>
                 <data>4440</data>
-                <data>14</data>
+                <data>2</data>
             </row>
         </row>
         <row>
@@ -3893,9 +4406,9 @@
         </row>
         <row>
             <data>Use of DRM</data>
-            <data>23</data>
+            <data>25</data>
             <data>48</data>
-            <data>48</data>
+            <data>52</data>
         </row>
         <row>
             <data>Use of FLSIF</data>
@@ -3923,26 +4436,26 @@
         </row>
         <row>
             <data>Use of IO</data>
-            <data>97</data>
+            <data>124</data>
             <data>240</data>
-            <data>40</data>
+            <data>52</data>
             <row>
                 <data>  IOBD</data>
-                <data>48</data>
+                <data>61</data>
                 <data>120</data>
-                <data>40</data>
+                <data>51</data>
             </row>
             <row>
                 <data>  IOBR</data>
-                <data>2</data>
+                <data>3</data>
                 <data>6</data>
-                <data>33</data>
+                <data>50</data>
             </row>
             <row>
                 <data>  IOBS</data>
-                <data>47</data>
+                <data>60</data>
                 <data>114</data>
-                <data>41</data>
+                <data>53</data>
             </row>
         </row>
         <row>
@@ -3971,9 +4484,9 @@
         </row>
         <row>
             <data>Use of IOL</data>
-            <data>97</data>
+            <data>124</data>
             <data>240</data>
-            <data>40</data>
+            <data>52</data>
         </row>
         <row>
             <data>Use of IPAL</data>
@@ -4007,9 +4520,9 @@
         </row>
         <row>
             <data>Use of RCKB</data>
-            <data>6</data>
+            <data>3</data>
             <data>24</data>
-            <data>25</data>
+            <data>13</data>
         </row>
         <row>
             <data>Use of RCKBMUX_TEST</data>
@@ -4043,9 +4556,9 @@
         </row>
         <row>
             <data>Use of USCM</data>
-            <data>6</data>
+            <data>10</data>
             <data>20</data>
-            <data>30</data>
+            <data>50</data>
         </row>
         <row>
             <data>Use of USCMMUX_TEST</data>
@@ -4091,11 +4604,11 @@
         </column_headers>
         <row>
             <data>m1_soc_top</data>
-            <data>9196</data>
-            <data>5318</data>
-            <data>608</data>
+            <data>8815</data>
+            <data>5380</data>
+            <data>96</data>
             <data>3</data>
-            <data>23</data>
+            <data>25</data>
             <data>0</data>
             <data>0</data>
             <data>2</data>
@@ -4103,2791 +4616,19 @@
             <data>0</data>
             <data>0</data>
             <data>1</data>
-            <data>97</data>
+            <data>124</data>
             <data>1</data>
             <data>1</data>
             <data>2</data>
             <data>0</data>
             <data>0</data>
             <data>2</data>
-            <data>6</data>
+            <data>3</data>
             <data>0</data>
             <data>0</data>
             <data>0</data>
             <data>0</data>
-            <data>6</data>
-            <row>
-                <data>cmos_PLL</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>1</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_rst_gen</data>
-                <data>11</data>
-                <data>10</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_sd_top</data>
-                <data>1134</data>
-                <data>378</data>
-                <data>512</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <row>
-                    <data>u_sd_card_cmd</data>
-                    <data>190</data>
-                    <data>70</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-                <row>
-                    <data>u_spi_master</data>
-                    <data>67</data>
-                    <data>44</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-            </row>
-            <row>
-                <data>u_integration_kit_dbg</data>
-                <data>5858</data>
-                <data>3508</data>
-                <data>96</data>
-                <data>3</data>
-                <data>19</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <row>
-                    <data>gen_CortexM1Integration.u_cm1_integration</data>
-                    <data>2219</data>
-                    <data>1022</data>
-                    <data>64</data>
-                    <data>3</data>
-                    <data>4</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_cortexm1</data>
-                        <data>2219</data>
-                        <data>1022</data>
-                        <data>64</data>
-                        <data>3</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>u_core</data>
-                            <data>1615</data>
-                            <data>682</data>
-                            <data>64</data>
-                            <data>3</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <row>
-                                <data>u_fetch</data>
-                                <data>36</data>
-                                <data>19</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                            <row>
-                                <data>u_ctrl</data>
-                                <data>795</data>
-                                <data>376</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <row>
-                                    <data>u_decode</data>
-                                    <data>298</data>
-                                    <data>14</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_excpt</data>
-                                    <data>113</data>
-                                    <data>73</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                            </row>
-                            <row>
-                                <data>u_dp</data>
-                                <data>784</data>
-                                <data>287</data>
-                                <data>64</data>
-                                <data>3</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <row>
-                                    <data>u_r_bank</data>
-                                    <data>72</data>
-                                    <data>8</data>
-                                    <data>64</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_alu_dec</data>
-                                    <data>46</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_mul_shft</data>
-                                    <data>159</data>
-                                    <data>136</data>
-                                    <data>0</data>
-                                    <data>3</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <row>
-                                        <data>u_shft</data>
-                                        <data>151</data>
-                                        <data>40</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                    </row>
-                                    <row>
-                                        <data>u_mul</data>
-                                        <data>8</data>
-                                        <data>96</data>
-                                        <data>0</data>
-                                        <data>3</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                        <data>0</data>
-                                    </row>
-                                </row>
-                                <row>
-                                    <data>u_mem_ctl</data>
-                                    <data>28</data>
-                                    <data>6</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_rf0_mux</data>
-                                    <data>32</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_rf1_mux</data>
-                                    <data>25</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                            </row>
-                        </row>
-                        <row>
-                            <data>u_nvic</data>
-                            <data>366</data>
-                            <data>180</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <row>
-                                <data>u_ahb</data>
-                                <data>212</data>
-                                <data>93</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                            <row>
-                                <data>u_ahb_os</data>
-                                <data>82</data>
-                                <data>57</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                            <row>
-                                <data>u_tree</data>
-                                <data>54</data>
-                                <data>24</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <row>
-                                    <data>u_pri_lvl0</data>
-                                    <data>15</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_pri_num1</data>
-                                    <data>4</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                                <row>
-                                    <data>u_pri_lvl2</data>
-                                    <data>13</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                            </row>
-                            <row>
-                                <data>u_main</data>
-                                <data>18</data>
-                                <data>6</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                        </row>
-                        <row>
-                            <data>u_ahb</data>
-                            <data>238</data>
-                            <data>160</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                    <row>
-                        <data>u_itcm</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>2</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>u_dtcm</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>2</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                </row>
-                <row>
-                    <data>gen_ahb_gpio_0.u_ahb_gpio_0</data>
-                    <data>185</data>
-                    <data>109</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_ahb_to_gpio</data>
-                        <data>2</data>
-                        <data>7</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>u_iop_gpio</data>
-                        <data>183</data>
-                        <data>102</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                </row>
-                <row>
-                    <data>gen_ahb_mem_0.u_cmsdk_ahb_mem</data>
-                    <data>4</data>
-                    <data>21</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-                <row>
-                    <data>gen_ahb_icache.u_cmsdk_ahb_icache</data>
-                    <data>449</data>
-                    <data>532</data>
-                    <data>32</data>
-                    <data>0</data>
-                    <data>5</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_I_Cache</data>
-                        <data>215</data>
-                        <data>173</data>
-                        <data>32</data>
-                        <data>0</data>
-                        <data>5</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>u_ICACHE_TAG0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0.5</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_ICACHE_TAG1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0.5</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_ICACHE_INS0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>2</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_ICACHE_INS1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>2</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                </row>
-                <row>
-                    <data>gen_ahb_dcache.u_cmsdk_ahb_dcache</data>
-                    <data>738</data>
-                    <data>443</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>5</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_D_Cache</data>
-                        <data>507</data>
-                        <data>176</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>5</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>u_DCACHE_TAG</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_DCACHE_SRAM0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_DCACHE_SRAM1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_DCACHE_SRAM2</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_DCACHE_SRAM3</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                </row>
-                <row>
-                    <data>gen_ahb_ethernet_dmac.u_cmsdk_ahb_ethernet_dmac</data>
-                    <data>706</data>
-                    <data>596</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>5</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_Ethernet_DMAC</data>
-                        <data>537</data>
-                        <data>374</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>5</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>u_TX_FIFO</data>
-                            <data>57</data>
-                            <data>44</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>2</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_RX_RING</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>u_RX_FIFO</data>
-                            <data>95</data>
-                            <data>53</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>2</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                </row>
-                <row>
-                    <data>u_ahb_def_slave</data>
-                    <data>2</data>
-                    <data>2</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-                <row>
-                    <data>u_apb_subsystem</data>
-                    <data>1210</data>
-                    <data>772</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>u_ahb_to_apb</data>
-                        <data>39</data>
-                        <data>51</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>u_apb_slave_mux</data>
-                        <data>114</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_timer_0.u_apb_timer_0</data>
-                        <data>138</data>
-                        <data>77</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_timer_1.u_apb_timer_1</data>
-                        <data>124</data>
-                        <data>77</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_watchdog.u_apb_watchdog</data>
-                        <data>174</data>
-                        <data>114</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>u_apb_watchdog_frc</data>
-                            <data>110</data>
-                            <data>78</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                    <row>
-                        <data>gen_apb_uart_0.u_apb_uart_0</data>
-                        <data>149</data>
-                        <data>116</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_uart_1.u_apb_uart_1</data>
-                        <data>134</data>
-                        <data>99</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_spi_0.u_apb_spi_0</data>
-                        <data>108</data>
-                        <data>79</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>gen_apb_i2c_0.u_apb_i2c_0</data>
-                        <data>230</data>
-                        <data>159</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>byte_controller</data>
-                            <data>179</data>
-                            <data>98</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <row>
-                                <data>bit_controller</data>
-                                <data>130</data>
-                                <data>73</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                        </row>
-                    </row>
-                </row>
-                <row>
-                    <data>u_ahb_decoder</data>
-                    <data>2</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-                <row>
-                    <data>u_ahb_mux</data>
-                    <data>113</data>
-                    <data>8</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-            </row>
-            <row>
-                <data>u_TEST_RAM</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0.5</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>cmos_8_16bit_m0</data>
-                <data>19</data>
-                <data>26</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>cmos_write_req_gen_m0</data>
-                <data>8</data>
-                <data>8</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_aq_axi_master</data>
-                <data>257</data>
-                <data>162</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>frame_read_write_m0</data>
-                <data>202</data>
-                <data>137</data>
-                <data>0</data>
-                <data>0</data>
-                <data>2</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <row>
-                    <data>write_buf</data>
-                    <data>96</data>
-                    <data>79</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>2</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-                <row>
-                    <data>frame_fifo_write_m0</data>
-                    <data>106</data>
-                    <data>58</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                </row>
-            </row>
-            <row>
-                <data>u_DDR3</data>
-                <data>411</data>
-                <data>177</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>2</data>
-                <data>5</data>
-                <data>0</data>
-                <data>0</data>
-                <data>1</data>
-                <data>54</data>
-                <data>1</data>
-                <data>0</data>
-                <data>2</data>
-                <data>0</data>
-                <data>0</data>
-                <data>1</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_TSMAC_FIFO_RXCKLI</data>
-                <data>51</data>
-                <data>50</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0.5</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_tsmac_phy</data>
-                <data>1175</data>
-                <data>836</data>
-                <data>0</data>
-                <data>0</data>
-                <data>1</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>5</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <row>
-                    <data>U_pgs_tsmac_rgmii_gmii_convert_v1_0</data>
-                    <data>2</data>
-                    <data>14</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>5</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>U_pgs_tsmac_gmii_to_rgmii_v1_0</data>
-                        <data>1</data>
-                        <data>10</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>5</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>U_pgs_tsmac_rgmii_to_gmii_v1_0</data>
-                        <data>1</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                </row>
-                <row>
-                    <data>U_pgs_tsmac_core_v1_1</data>
-                    <data>1173</data>
-                    <data>822</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>1</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <data>0</data>
-                    <row>
-                        <data>U_pgs_tsmac_rx_sm_v1_1</data>
-                        <data>92</data>
-                        <data>121</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>1</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>I_tsmac_data_ram_v1_1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>1</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                    <row>
-                        <data>U_pgs_tsmac_apb_modify_v1_0</data>
-                        <data>1</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>U_pgs_tsmac_apb_port_v1_0</data>
-                        <data>4</data>
-                        <data>65</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                    </row>
-                    <row>
-                        <data>U_pe_mcxmac</data>
-                        <data>1076</data>
-                        <data>636</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <data>0</data>
-                        <row>
-                            <data>pe_mcxmac_core_1</data>
-                            <data>1056</data>
-                            <data>503</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <row>
-                                <data>petmc_top_1</data>
-                                <data>8</data>
-                                <data>18</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                            <row>
-                                <data>petfn_top_1</data>
-                                <data>443</data>
-                                <data>180</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <row>
-                                    <data>pecrc_1</data>
-                                    <data>55</data>
-                                    <data>32</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                            </row>
-                            <row>
-                                <data>perfn_top_1</data>
-                                <data>445</data>
-                                <data>219</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <row>
-                                    <data>pecrc_1</data>
-                                    <data>64</data>
-                                    <data>32</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                    <data>0</data>
-                                </row>
-                            </row>
-                            <row>
-                                <data>permc_top_1</data>
-                                <data>160</data>
-                                <data>86</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                                <data>0</data>
-                            </row>
-                        </row>
-                        <row>
-                            <data>pehst_1</data>
-                            <data>8</data>
-                            <data>123</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                        <row>
-                            <data>pecar_1</data>
-                            <data>12</data>
-                            <data>10</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                            <data>0</data>
-                        </row>
-                    </row>
-                </row>
-            </row>
+            <data>10</data>
         </row>
     </table>
     <table id="pnr_runtime" title="Place &amp; Route Runtime &amp; Memory" column_number="3">
@@ -6897,9 +4638,9 @@
             <data>Peak Memory (B)</data>
         </column_headers>
         <row>
-            <data>446.891</data>
-            <data>451</data>
-            <data>1,144,750,080</data>
+            <data>39.0156</data>
+            <data>196</data>
+            <data>1,137,238,016</data>
         </row>
     </table>
     <table id="pnr_messages" title="Place &amp; Route Messages" column_number="1">
@@ -6908,154 +4649,130 @@
             <data color="4278190080" align="0" message="4" bold="0">dp_step_length: 4 != def: 1</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2006: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port TX lack of drive, output port and inout port had better set drive value, the default value is 4.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2006: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port TX lack of drive, output port and inout port had better set drive value, the default value is 4.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf] Port spi0_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 75)] | Port RX has been placed at location A12, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 103)] | Port RX has been placed at location A12, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 77)] | Port cmos_db[0] has been placed at location E18, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2001: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 104)] Object 'SD_MISO' is dangling, which has no connection. it will be ignored.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 78)] | Port cmos_db[1] has been placed at location D18, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 105)] | Port cmos_db[0] has been placed at location E18, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 79)] | Port cmos_db[2] has been placed at location F14, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 106)] | Port cmos_db[1] has been placed at location D18, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 81)] | Port cmos_db[4] has been placed at location E17, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 107)] | Port cmos_db[2] has been placed at location F14, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 82)] | Port cmos_db[5] has been placed at location D17, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 109)] | Port cmos_db[4] has been placed at location E17, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 83)] | Port cmos_db[6] has been placed at location G14, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 110)] | Port cmos_db[5] has been placed at location D17, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 84)] | Port cmos_db[7] has been placed at location G13, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 111)] | Port cmos_db[6] has been placed at location G14, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 85)] | Port cmos_href has been placed at location H14, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 112)] | Port cmos_db[7] has been placed at location G13, whose type is share pin.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 99)] | Port spi0_miso has been placed at location A4, whose type is share pin.</data>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 113)] | Port cmos_href has been placed at location H14, whose type is share pin.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="6" bold="0">ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/device_map/m1_soc_top.pcf(line number: 127)] | Port spi0_miso has been placed at location A4, whose type is share pin.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="6" bold="0">Route-2036: The clock path from ex_clk_50m_ibuf/opit_1:OUT to cmos_PLL/u_pll_e1/goppll:CLKIN1 is routed by SRB.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_78_216.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_265.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_142_220.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_106_256.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_66_116.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_66_129.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_248.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_54_204.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_193.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_173.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_112.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_54_204.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_196.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_220.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_78_293.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_205.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_240.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_208.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_125.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_86_224.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_142_300.</data>
-        </row>
-        <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_130_273.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_142_221.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_130_269.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_112.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_108.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_30_108.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_142_196.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_146_304.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_276.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_102_344.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_130_124.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_98_333.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_142_313.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_152.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_134_325.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_253.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_130_33.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_253.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_46_104.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_82_88.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_134_277.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_61.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_26_293.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_63.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMS_102_141.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_186.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_70_197.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_54_96.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_50_96.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_42_149.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in CLMA_90_261.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_112.</data>
+        </row>
+        <row>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in USCM_74_132.</data>
         </row>
         <row>
             <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_60.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_62.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_63.</data>
         </row>
         <row>
-            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_151_184.</data>
+            <data color="4278190080" align="0" message="4" bold="0">Route-6001: Insert route through in RCKB_7_62.</data>
         </row>
     </table>
     <general_container id="pnr_settings" align="1">
@@ -7280,33 +4997,49 @@
                 </column_headers>
                 <row>
                     <data>clkbufg_0/gopclkbufg</data>
-                    <data>USCM_74_107</data>
+                    <data>USCM_74_109</data>
                     <data>ntclkbufg_0</data>
+                    <data>78</data>
+                    <data>cmos_PLL/u_pll_e1/goppll</data>
+                    <data>PLL_82_319</data>
+                </row>
+                <row>
+                    <data>clkbufg_1/gopclkbufg</data>
+                    <data>USCM_74_108</data>
+                    <data>ntclkbufg_1</data>
+                    <data>109</data>
+                    <data>ex_clk_50m_ibuf/opit_1</data>
+                    <data>IOL_7_298</data>
+                </row>
+                <row>
+                    <data>clkbufg_2/gopclkbufg</data>
+                    <data>USCM_74_107</data>
+                    <data>ntclkbufg_2</data>
                     <data>159</data>
                     <data>u_DDR3/u_pll_50_400/u_pll_e1/goppll</data>
                     <data>PLL_82_71</data>
                 </row>
                 <row>
-                    <data>clkbufg_1/gopclkbufg</data>
+                    <data>clkbufg_3/gopclkbufg</data>
                     <data>USCM_74_106</data>
-                    <data>ntclkbufg_1</data>
-                    <data>222</data>
+                    <data>ntclkbufg_3</data>
+                    <data>356</data>
                     <data>u_DDR3/u_pll_50_400/u_pll_e1/goppll</data>
                     <data>PLL_82_71</data>
                 </row>
                 <row>
-                    <data>clkbufg_2/gopclkbufg</data>
+                    <data>clkbufg_4/gopclkbufg</data>
                     <data>USCM_74_104</data>
-                    <data>ntclkbufg_2</data>
-                    <data>4931</data>
+                    <data>ntclkbufg_4</data>
+                    <data>4149</data>
                     <data>u_DDR3/u_pll_50_400/u_pll_e1/goppll</data>
                     <data>PLL_82_71</data>
                 </row>
                 <row>
                     <data>cmos_pclkbufg/gopclkbufg</data>
-                    <data>USCM_74_108</data>
+                    <data>USCM_74_110</data>
                     <data>cmos_pclk_g</data>
-                    <data>70</data>
+                    <data>73</data>
                     <data>cmos_pclk_ibuf/opit_1</data>
                     <data>IOL_151_173</data>
                 </row>
@@ -7320,7 +5053,7 @@
                 </row>
                 <row>
                     <data>u_cmos_xclk/gopclkbufg</data>
-                    <data>USCM_74_109</data>
+                    <data>USCM_74_111</data>
                     <data>nt_cmos_xclk</data>
                     <data>1</data>
                     <data>cmos_PLL/u_pll_e1/goppll</data>
@@ -7351,8 +5084,8 @@
                 </row>
                 <row>
                     <data>CLKIN2</data>
-                    <data>_N1450</data>
-                    <data>GND_92</data>
+                    <data>_N1354</data>
+                    <data>GND_95</data>
                     <data>CLMA_78_304</data>
                 </row>
             </table>
@@ -7380,9 +5113,9 @@
                 </row>
                 <row>
                     <data>CLKIN2</data>
-                    <data>_N1461</data>
-                    <data>GND_91</data>
-                    <data>CLMS_78_77</data>
+                    <data>_N1371</data>
+                    <data>GND_96</data>
+                    <data>CLMA_90_76</data>
                 </row>
             </table>
         </table_container>

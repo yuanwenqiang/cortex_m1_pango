@@ -1628,3 +1628,126 @@ dev_map -detail -devmap_remove_dups 1
 pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
 report_timing 
 gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+add_design "F:/pro/pango_pro/FPGA_Pro/src/cnn/cnn_top.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/cnn/down_sample_data.v"
+remove_design -verilog "F:/pro/pango_pro/FPGA_Pro/src/sd_top.v"
+remove_design -verilog "F:/pro/pango_pro/FPGA_Pro/src/sd_cmd.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/ip/s_data_ram/s_data_ram.idf"
+remove_design -verilog "F:/pro/pango_pro/FPGA_Pro/src/spi_master.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/lcd/color_bar.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/lcd/video_define.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/lcd/video_timing_data.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+add_design "F:/pro/pango_pro/FPGA_Pro/pnr/ipcore/afifo_64i_16o_128/afifo_64i_16o_128.idf"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/i2c_config.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/i2c_master_bit_ctrl.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/i2c_master_byte_ctrl.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/i2c_master_defines.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/i2c_master_top.v"
+add_design "F:/pro/pango_pro/FPGA_Pro/src/i2c_master/lut_ov5640_rgb565_480_272.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module m1_soc_top
+synthesize -ads -fanout_guide 1000 -min_controlset_size 4 -selected_syn_tool_opt 2 
+dev_map -detail -devmap_remove_dups 1 
+pnr -parallel 5 -mode {performance} -optimize_multi_corner_timing -fix_hold_violation -optimize_gp_recovery -optimize_dp_recovery -optimize_rp_recovery -optimize_routing_recovery 
+report_timing 

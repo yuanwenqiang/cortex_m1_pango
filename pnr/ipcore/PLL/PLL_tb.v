@@ -176,6 +176,7 @@ GTP_GRS GRS_INST(
 
 PLL U_PLL (
 .clkout0(clkout0),
+    .clkout1(clkout1),
     
     .clkin1(clkin1),
     

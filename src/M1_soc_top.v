@@ -11,7 +11,6 @@ module m1_soc_top (
 //    input             pad_TDI,  
 //    output            pad_TDO, 
 
-    output  [3:0]     LED,
 //    output  [7:0]     gpio_out,
 
     input             RX,
@@ -24,7 +23,7 @@ module m1_soc_top (
 
     inout             i2c0_sck,
     inout             i2c0_sda,
-
+//ddr
 	input  		      pad_loop_in,
     input  		      pad_loop_in_h,
     output 		      pad_rstn_ch0,
@@ -64,18 +63,36 @@ module m1_soc_top (
     output            cmos_xclk,         
     input [7:0]       cmos_db,
 
-//output                req_flag,
-//output                finish_flag,
-//output  [7:0]              addr_test,
+//lcd output
+	output            lcd_dclk,	
+	output            lcd_hs,            //lcd horizontal synchronization
+	output            lcd_vs,            //lcd vertical synchronization        
+	output            lcd_de,            //lcd data enable     
+	output[7:0]       lcd_r,             //lcd red
+	output[7:0]       lcd_g,             //lcd green
+	output[7:0]       lcd_b,	          //lcd blue
+	
 
     output            l0_sgmii_clk_shft,
-    output            phy_tx_en,        
-    output            phy_txd0,         
-    output            phy_txd1,         
-    output            phy_txd2,         
-    output            phy_txd3
+    output            phy_tx_en,
+    output            phy_txd0,
+    output            phy_txd1,
+    output            phy_txd2,
+    output            phy_txd3,
+
+    output  [3:0]     LED
 
 ); 
+
+parameter VS_DIV				= 8'd10;
+parameter DATA_RAM_BITS			= 13;
+
+parameter MEM_DATA_BITS         = 64  ;            //external memory user interface data width
+parameter ADDR_BITS             = 25  ;            //external memory user interface address width
+parameter BUSRT_BITS            = 10  ;            //external memory user interface burst width
+parameter DATA_BITS				= 16  ;
+parameter BURST_SIZE			= 64;
+
 
     `ifdef SIMULATION
         `include "../bench/src/m1_core/cm1_option_defs.v"
@@ -224,9 +241,7 @@ wire                            ui_clk;
 wire                            ui_clk_sync_rst;
 wire                            init_calib_complete;
 wire[7:0]                       read_data_eep;
-parameter MEM_DATA_BITS          = 64;             //external memory user interface data width
-parameter ADDR_BITS              = 25;             //external memory user interface address width
-parameter BUSRT_BITS             = 10;
+
 
 wire                            wr_burst_data_req;
 wire                            wr_burst_finish;
@@ -248,6 +263,7 @@ wire                            write_en;
 wire[15:0]                      write_data/*synthesis syn_keep=1*/;
 wire                            write_req;
 wire                            write_req_ack;
+
 wire                            video_clk;         //video pixel clock
 wire                            video_clk5x;
 wire                            hs;
@@ -258,8 +274,6 @@ wire[15:0]                      cmos_16bit_data;
 wire                            cmos_16bit_wr;
 wire[1:0]                       write_addr_index;
 wire[1:0]                       read_addr_index;
-wire[9:0]                       lut_index;
-wire[31:0]                      lut_data;
     // Master Write Address
 wire [3:0]                      s00_axi_awid;
 wire [63:0]                     s00_axi_awaddr;
@@ -311,32 +325,110 @@ wire                            clk_200MHz;
 
 wire                             cmos_xclk_w;
 wire                             cmos_pclk_g;
-//CLK----------------------------------------------------------------
+
+//=========================================================//
+//========================wires============================//
+//=========================================================//
+
+//====================frame wires=======================//
+wire                            wr_burst_req_frame;
+wire[BUSRT_BITS - 1:0]          wr_burst_len_frame;
+wire[ADDR_BITS - 1:0]           wr_burst_addr_frame;
+wire[MEM_DATA_BITS - 1 : 0]     wr_burst_data_frame;
+
+wire                            rd_burst_req_frame;
+wire[BUSRT_BITS - 1:0]          rd_burst_len_frame;
+wire[ADDR_BITS - 1:0]           rd_burst_addr_frame;
+//====================down sample wires=======================//
+wire [DATA_RAM_BITS-1:0]		down_rd_addr;
+wire [15:0]			            down_rd_data;
+//================== flash wires=====================//
+wire 							wr_burst_req_flash;
+wire [BUSRT_BITS-1:0]			wr_burst_len_flash;
+wire [ADDR_BITS-1:0]			wr_burst_addr_flash;
+wire 							wr_burst_data_req_flash;
+wire [MEM_DATA_BITS-1:0]		wr_burst_data_flash;
+wire 							wr_burst_finish_flash;
+
+wire							flash_read_finish;
+wire							uart_tx_flash;
+//================== coe wires=====================//
+//read
+wire							rd_burst_req_coe;
+wire [BUSRT_BITS-1:0]			rd_burst_len_coe;
+wire [ADDR_BITS-1:0]			rd_burst_addr_coe;
+wire [3:0]						debug;
+
+wire							read_req_coe;
+wire							read_req_ack_coe;
+wire [ADDR_BITS-1:0]			read_addr_coe;
+wire [ADDR_BITS-1:0]			read_len_coe;
+wire							read_finish_coe;
+wire [DATA_BITS-1:0]			read_data_coe;
+wire							read_data_valid_coe;
+wire							read_en_coe;
+wire							uart_tx_coetb;
+//write
+wire 							wr_burst_req_coe;
+wire [BUSRT_BITS-1:0]			wr_burst_len_coe;
+wire [ADDR_BITS-1:0]			wr_burst_addr_coe;
+wire 							wr_burst_data_req_coe;
+wire [MEM_DATA_BITS-1:0]			wr_burst_data_coe;
+wire 							wr_burst_finish_coe;
+
+wire 							write_req_coe;
+wire 							write_req_ack_coe;
+wire [ADDR_BITS-1:0]			write_addr_coe;
+wire [ADDR_BITS-1:0]			write_len_coe;
+wire 							write_en_coe;
+wire [DATA_BITS-1:0]			write_data_coe;
+wire 							write_finish_coe;
+
+
+
+
+//=====================lcd wires====================//
+assign lcd_hs = hs;
+assign lcd_vs = vs;
+assign lcd_de = de;
+assign lcd_r  = {vout_data[15:11],3'd0};
+assign lcd_g  = {vout_data[10:5],2'd0};
+assign lcd_b  = {vout_data[4:0],3'd0};
+assign lcd_dclk = ~video_clk;
+
+//=======================cmos data=====================//
+assign write_en = cmos_16bit_wr;
+assign write_data = {cmos_16bit_data[4:0],cmos_16bit_data[10:5],cmos_16bit_data[15:11]};
+
+
+ //CLK----------------------------------------------------------------
     // sysclk source
 	`ifdef UNCACHE
 	PLL u_PLL (
         .clkin1               (ex_clk_50m), // input
         .pll_lock             (pll_lock),   // output
-        .clkout0              (HCLK),       // output
-        .clkout1              ()            // output
+        .clkout0              (HCLK),       // output  50M
+        
     );
 	`else
 		assign HCLK = aclk_mux;
-	`endif    
+	`endif
 
 PLL cmos_PLL (
         .clkin1               (ex_clk_50m), // input
-        .clkout0              (cmos_xclk_w)       // output
+        .clkout0              (cmos_xclk_w),       // output
+        .clkout1              (video_clk)   // output  9M
     );
 
 
-GTP_CLKBUFG cmos_pclkbufg            //PCK ‰»ÎBUF
+
+GTP_CLKBUFG cmos_pclkbufg            //PCKÔøΩÔøΩÔøΩÔøΩBUF
 (
   .CLKOUT                (cmos_pclk_g    ),      
   .CLKIN                 (cmos_pclk      )
 );
 
-GTP_CLKBUFG u_cmos_xclk               //XCLK ‰≥ˆBUF
+GTP_CLKBUFG u_cmos_xclk               //XCLKÔøΩÔøΩÔøΩBUF
 (
    .CLKOUT               (cmos_xclk),
    .CLKIN                (cmos_xclk_w)
@@ -379,34 +471,49 @@ GTP_CLKBUFG u_cmos_xclk               //XCLK ‰≥ˆBUF
 
     assign m1_tpnd = tsmac_tpnd && ~udp_cs;
 
-//sd-----------------------------------------------------------------------
-    sd_top u_sd_top(
+// wire done_init;
+// wire[9:0]                       lut_index;
+// wire[31:0]                      lut_data;
+// //=========================iic======================//
+// i2c_config i2c_config_m0(
+// 	.rst                        (~rst_key                   ),
+// 	.clk                        (ex_clk_50m                ),
+// 	.clk_div_cnt                (16'd499                  ),
+// 	.i2c_addr_2byte             (1'b1                     ),
+// 	.lut_index                  (lut_index                ),
+// 	.lut_dev_addr               (lut_data[31:24]          ),
+// 	.lut_reg_addr               (lut_data[23:8]           ),
+// 	.lut_reg_data               (lut_data[7:0]            ),
+// 	.error                      (                         ),
+// 	.done                       (done_init                ),//keep high after init
+// 	.i2c_scl                    (i2c0_sck                 ),
+// 	.i2c_sda                    (i2c0_sda                 )
+// );
+// lut_ov5640_rgb565_480_272 lut_ov5640_rgb565_480_272_m0(
+// 	.lut_index                  (lut_index                ),
+// 	.lut_data                   (lut_data                 )
+// );
+
+//cnn-----------------------------------------------------------------------
+    cnn_top u_cnn_top(
         .HCLK              (HCLK),
         .HRESETn           (SYSRESETn),
         .HSEL              (HSEL),
         .HTRANS            (HTRANS),
         .HSIZE             (HSIZE),
-        .HBURST		   (HBURST),
+        .HBURST		       (HBURST),
         .HPROT             (HPROT),
         .HWDATA            (HWDATA),
         .HWRITE            (HWRITE),
-        .HADDR             (HADDR),            
-        .HREADY            (HREADY),      
+        .HADDR             (HADDR),
+        .HREADY            (HREADY),
 
-        .HREADYOUT         (HREADYOUT),            //HREADY–≈∫≈
-        .HRESP             (HRESP),            //RESP–≈∫≈
-        .HRDATA            (HRDATA),            //∂¡AHB ˝æ›
-      
-          
-        .WR_FINISH          (gpio_in1),            //∂¡–¥ÕÍ≥…÷–∂œ«Î«Û–≈∫≈
-        .SD_nCS             (SD_nCS),            //SPI—°÷––≈∫≈
-        .SD_DCLK            (SD_DCLK),            //SPI ±÷”
-        .SD_MOSI            (SD_MOSI),            //SPI÷˜µΩ¥” ˝æ›
-        .SD_MISO            (SD_MISO)            //SPI¥”µΩ÷˜ ˝æ›
-        
+        .HREADYOUT         (HREADYOUT),
+        .HRESP             (HRESP),
+        .HRDATA            (HRDATA)
 );
 
-    //M1 core
+//======================M1 core=========================//
     integration_kit_dbg u_integration_kit_dbg(   
 		 // Inputs
         .HCLK              (HCLK),           // System Clock
@@ -469,14 +576,11 @@ GTP_CLKBUFG u_cmos_xclk               //XCLK ‰≥ˆBUF
         //UART0
         .RX0               (RX),
         .TX0               (TX),
-
         //UART1
         .RX1               (),
         .TX1               (),
-
         //WATCHDOG
         .watchdog_reset    (watchdog_reset),
-
         //SPI
         .spi0_clk          (spi0_clk),
         .spi0_cs           (spi0_cs_0),
@@ -621,9 +725,9 @@ GTP_CLKBUFG u_cmos_xclk               //XCLK ‰≥ˆBUF
       .rd_rst                   (1'b0)          // input
     );
 
-//CMOS
+//=========================8 to 16======================//
 cmos_8_16bit cmos_8_16bit_m0(
-	.rst                        (~rst_key                   ),
+	.rst                        (~SYSRESETn                    ),
 	.pclk                       (cmos_pclk_g              ),
 	.pdata_i                    (cmos_db                  ),
 	.de_i                       (cmos_href                ),
@@ -631,18 +735,58 @@ cmos_8_16bit cmos_8_16bit_m0(
 	.hblank                     (                         ),
 	.de_o                       (cmos_16bit_wr            )
 );
-//CMOS sensor writes the request and generates the read and write address index
-
-
-cmos_write_req_gen cmos_write_req_gen_m0(
-	.rst                        (~rst_key                   ),
+//=========================cmos======================//
+cmos_write_req_gen #(
+    .VS_DIV						( 10)
+)cmos_write_req_gen_m0(
+	.rst                        (~SYSRESETn                   ),
 	.pclk                       (cmos_pclk_g              ),
-	.cmos_vsync                 (~cmos_vsync               ),
+	.cmos_vsync                 (cmos_vsync               ),
 	.write_req                  (write_req                ),
 	.write_addr_index           (write_addr_index         ),
 	.read_addr_index            (read_addr_index          ),
 	.write_req_ack              (write_req_ack            )
 );
+
+
+//=========================lcd======================//
+video_timing_data#(
+	.DATA_WIDTH (16)                       // Video data one clock data width
+)video_timing_data_m0 (
+	.video_clk                  (video_clk                ),
+	.rst                        (~SYSRESETn                ),
+	.read_req                   (read_req                 ),
+	.read_req_ack               (read_req_ack             ),
+	.read_en                    (read_en                  ),
+	.read_data                  (read_data                ),
+	.hs                         (hs                       ),
+	.vs                         (vs                       ),
+	.de                         (de                       ),
+	.vout_data                  (vout_data                )
+);
+
+
+//Â≠òÂÇ®ÂéüÂßãÂõæÂÉèÊï∞ÊçÆ-ÊäΩÂ∏ß
+down_sample_data #(
+	.X_AXIS_I					(480),
+	.Y_AXIS_I					(272),
+	.X_AXIS_O					(120),
+	.Y_AXIS_O					(68),
+	.FIFO_BITS					(13),
+	.DATA_BITS					(16)
+)u_down_sample_data(
+	.rst						(write_req_ack | ~SYSRESETn),
+
+	.wr_clk						(cmos_pclk),
+	.wr_en						(write_en),
+	.wr_data					(write_data),
+
+	.rd_clk						(cmos_pclk),
+	.rd_addr					(down_rd_addr),
+	.rd_data					(down_rd_data)
+);
+
+
 assign write_en = cmos_16bit_wr;
 //DDR------------------------------------------------------------------
     always@(posedge HCLK or negedge rst_key)
@@ -666,7 +810,7 @@ assign write_en = cmos_16bit_wr;
 aq_axi_master u_aq_axi_master
 	(
       .ARESETN                     (SYSRESETn                                 ),
-	 // .ARESETN                     (~ui_clk_sync_rst                        ),
+	 // .ARESETN                     (~ui_clk_sync_rst                          ),
 	  .ACLK                        (aclk_1                                    ),
 	  .M_AXI_AWID                  (s00_axi_awid                              ),
 	  .M_AXI_AWADDR                (s00_axi_awaddr                            ),
@@ -712,25 +856,25 @@ aq_axi_master u_aq_axi_master
 	  .M_AXI_RREADY                (s00_axi_rready                            ),
 
 	  .MASTER_RST                  (1'b0                                     ),
-	  .WR_START                    (wr_burst_req                             ),  // ‰»Îµƒ–¥«Î«Û
-	  .WR_ADRS                     ({wr_burst_addr,3'd0}                     ),   // ‰»Îµƒ25Œª–¥µÿ÷∑ “ª¥Œ–¥64∏ˆ ˝æ›£¨ µº  ˝æ›µÿ÷∑*8 
-	  .WR_LEN                      ({wr_burst_len,3'd0}                      ),      // ‰»Îµƒ10Œª–¥ ˝æ›≥§∂»  µº µƒ ˝æ›≥§∂» *8
-	  .WR_READY                    (                                         ),
-	  .WR_FIFO_RE                  (wr_burst_data_req                        ),      //«Î«Û ˝æ› ‰»Î
+	  .WR_START                    (wr_burst_req                             ),  //ÔøΩÔøΩÔøΩÔøΩÔøΩ–¥ÔøΩÔøΩÔøΩÔøΩ
+	  .WR_ADRS                     ({4'b0,{wr_burst_addr,3'd0}}              ),   //ÔøΩÔøΩÔøΩÔøΩÔøΩ25Œª–¥ÔøΩÔøΩ÷∑ “ªÔøΩÔøΩ–¥64ÔøΩÔøΩÔøΩÔøΩÔøΩ›£ÔøΩ µÔøΩÔøΩÔøΩÔøΩÔøΩ›µÔøΩ÷∑*8 
+	  .WR_LEN                      ({19'b0,{wr_burst_len,3'd0}}              ),      //ÔøΩÔøΩÔøΩÔøΩÔøΩ10Œª–¥ÔøΩÔøΩÔøΩ›≥ÔøΩÔøΩÔøΩ  µÔøΩ µÔøΩÔøΩÔøΩÔøΩ›≥ÔøΩÔøΩÔøΩ *8
+	  .WR_READY                    (wr_burst_ready                             ),
+	  .WR_FIFO_RE                  (wr_burst_data_req                        ),      //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ
 	  .WR_FIFO_EMPTY               (1'b0                                     ),
 	  .WR_FIFO_AEMPTY              (1'b0                                     ),
-	  .WR_FIFO_DATA                (wr_burst_data                            ),      // ‰»Îµƒ ˝æ› 64Œª
-	  .WR_DONE                     (wr_burst_finish                          ),      //–¥ÕÍ≥…
+	  .WR_FIFO_DATA                (wr_burst_data                            ),      //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ 64Œª
+	  .WR_DONE                     (wr_burst_finish                          ),      //–¥ÔøΩÔøΩÔøΩ
 
-//	  .RD_START                    (rd_burst_req                             ),
-//	  .RD_ADRS                     ({rd_burst_addr,3'd0}                     ),
-//	  .RD_LEN                      ({rd_burst_len,3'd0}                      ),
-//	  .RD_READY                    (                                         ),
-//	  .RD_FIFO_WE                  (rd_burst_data_valid                      ),
-//	  .RD_FIFO_FULL                (1'b0                                     ),
-//	  .RD_FIFO_AFULL               (1'b0                                     ),
-//	  .RD_FIFO_DATA                (rd_burst_data                            ),
-//	  .RD_DONE                     (rd_burst_finish                          ),
+	  .RD_START                    (rd_burst_req                             ),
+	  .RD_ADRS                     ({4'b0,{rd_burst_addr,3'd0}}              ),
+	  .RD_LEN                      ({19'b0,{rd_burst_len,3'd0}}              ),
+	  .RD_READY                    (                                         ),
+	  .RD_FIFO_WE                  (rd_burst_data_valid                      ),
+	  .RD_FIFO_FULL                (1'b0                                     ),
+	  .RD_FIFO_AFULL               (1'b0                                     ),
+	  .RD_FIFO_DATA                (rd_burst_data                            ),
+	  .RD_DONE                     (rd_burst_finish                          ),
 	  .DEBUG                       (                                         )
 );
 
@@ -742,45 +886,46 @@ frame_read_write frame_read_write_m0
 (
 	.rst                        (~rst_key                   ),
 	.mem_clk                    (aclk_1                   ),
-//	.rd_burst_req               (rd_burst_req             ),
-//	.rd_burst_len               (rd_burst_len             ),
-//	.rd_burst_addr              (rd_burst_addr            ),
-//	.rd_burst_data_valid        (rd_burst_data_valid      ),
-//	.rd_burst_data              (rd_burst_data            ),
-//	.rd_burst_finish            (rd_burst_finish          ),
-//	.read_clk                   (video_clk                ),
-//	.read_req                   (read_req                 ),
-//	.read_req_ack               (read_req_ack             ),
-//	.read_finish                (                         ),
-	
-//  .read_addr_0                 (24'h400000                ), //The first frame address is 0
-//	.read_addr_1                (24'h440000                ), //The second frame address is 24'd2073600 ,large enough address space for one frame of video
-//	.read_addr_2                (24'h480000              ),
-//	.read_addr_3                (24'h4C0000                ),
-//	.read_addr_index            (read_addr_index          ),
-//	.read_len                   (24'd130000                    ),//frame size ∑÷±Ê¬ *16/64
-//	.read_en                    (read_en                  ),
-//	.read_data                  (read_data                ),
-/////////////////////////////////////////////////////////////////////
+//=========================read wires===========================//
+	.rd_burst_req               (rd_burst_req             ),
+	.rd_burst_len               (rd_burst_len             ),
+	.rd_burst_addr              (rd_burst_addr            ),
+	.rd_burst_data_valid        (rd_burst_data_valid      ),
+	.rd_burst_data              (rd_burst_data            ),
+	.rd_burst_finish            (rd_burst_finish          ),
+	.read_clk                   (video_clk                ),
+	.read_req                   (read_req                 ),
+	.read_req_ack               (read_req_ack             ),
+	.read_finish                (                         ),
+
+    .read_addr_0                (25'h400000                ), //The first frame address is 0
+	.read_addr_1                (25'h440000                ), //The second frame address is 24'd2073600 ,large enough address space for one frame of video
+	.read_addr_2                (25'h480000              ),
+	.read_addr_3                (25'h4C0000                ),
+	.read_addr_index            (read_addr_index          ),
+	.read_len                   (25'd32640                    ),//frame size ÔøΩ÷±ÔøΩÔøΩÔøΩ*16/64
+	.read_en                    (read_en                  ),
+	.read_data                  (read_data                ),
+//=========================write wires===========================//
 	.wr_burst_req               (wr_burst_req             ),
-	.wr_burst_len               (wr_burst_len             ),      // ‰≥ˆµƒ¥´ ‰≥§∂»  10Œª 
-	.wr_burst_addr              (wr_burst_addr            ),      // ‰≥ˆµƒ¥´ ‰µÿ÷∑  25Œª
+	.wr_burst_len               (wr_burst_len             ),      //ÔøΩÔøΩÔøΩÔøΩƒ¥ÔøΩÔøΩ‰≥§ÔøΩÔøΩ  10Œª 
+	.wr_burst_addr              (wr_burst_addr            ),      //ÔøΩÔøΩÔøΩÔøΩƒ¥ÔøΩÔøΩÔøΩÔøΩ÷∑  25Œª
 	.wr_burst_data_req          (wr_burst_data_req        ),
-	.wr_burst_data              (wr_burst_data            ),
+	.wr_burst_data              (wr_burst_data      ),
 	.wr_burst_finish            (wr_burst_finish          ),
 	.write_clk                  (cmos_pclk_g              ),
 	.write_req                  (write_req                ),
 	.write_req_ack              (write_req_ack            ),
 	.write_finish               (                         ),
 
-      .write_addr_0                (24'h400000               ),    //»Ì∫Àµÿ÷∑0x30000000 ◊Û“∆3∫Û
-	.write_addr_1               (24'h440000               ),     //»Ì∫Àµÿ÷∑0x30200000
-	.write_addr_2               (24'h480000               ),      //»Ì∫Àµÿ÷∑0x30400000
-	.write_addr_3               (24'h4C0000               ),      //»Ì∫Àµÿ÷∑0x30600000
-	.write_addr_index           (write_addr_index         ),       // ‰»Îµƒµÿ÷∑—°‘Ò
-	.write_len                  (24'd130000                  ), //frame size ∑÷±Ê¬ *16/64 =/4
+    .write_addr_0               (25'h400000               ),    //ÔøΩÔøΩÔøΩÀµÔøΩ÷∑0x30000000 ÔøΩÔøΩÔøΩÔøΩ3ÔøΩÔøΩ
+	.write_addr_1               (25'h440000               ),     //ÔøΩÔøΩÔøΩÀµÔøΩ÷∑0x30200000
+	.write_addr_2               (25'h480000               ),      //ÔøΩÔøΩÔøΩÀµÔøΩ÷∑0x30400000
+	.write_addr_3               (25'h4C0000               ),      //ÔøΩÔøΩÔøΩÀµÔøΩ÷∑0x30600000
+	.write_addr_index           (write_addr_index         ),       //ÔøΩÔøΩÔøΩÔøΩƒµÔøΩ÷∑—°ÔøΩÔøΩ
+	.write_len                  (25'd32640                  ), //frame size ÔøΩ÷±ÔøΩÔøΩÔøΩ*16/64 =/4
 	.write_en                   (write_en                 ),
-	.write_data                 (cmos_16bit_data               )
+	.write_data                 (write_data               )
 );
 
     DDR3 u_DDR3 (
@@ -816,7 +961,7 @@ frame_read_write frame_read_write_m0
       .pad_ba_ch0             (pad_ba_ch0),     // output [2:0]
       .pad_loop_out           (pad_loop_out),   // output
       .pad_loop_out_h         (pad_loop_out_h), // output
-   ////////////////////////////////////////////////////////////////////////////     
+//=========================m1 wires===========================//     
       .areset_0               (1'b0),           // input
       .aclk_0                 (HCLK),           // input
       .awid_0                 (8'h00),          // input [7:0]
@@ -858,7 +1003,7 @@ frame_read_write frame_read_write_m0
       .csysreq_0              (1'b1),           // input
       .csysack_0              (),               // output
       .cactive_0              (),               // output
-/////////////////////////////////////////////////////////////////////////////
+//=========================frame wires===========================//
       .areset_1               (1'b0),           // input
       .aclk_1                 (aclk_1),         // input
       .awid_1                 (s00_axi_awid),          // input [7:0]

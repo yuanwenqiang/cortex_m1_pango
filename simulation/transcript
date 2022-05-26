@@ -1,10 +1,117 @@
-# Reading C:/modeltech64_10.2c/tcl/vsim/pref.tcl 
-# //  ModelSim SE-64 10.2c Jul 19 2013 
+# Reading C:/modeltech64_10.6e/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6e Jun 23 2018
 # //
-# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  Copyright 1991-2018 Mentor Graphics Corporation
 # //  All Rights Reserved.
 # //
-# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
-# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
 # //
+# do sim.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.6e Lib Mapping Utility 2018.06 Jun 23 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.6e Lib Mapping Utility 2018.06 Jun 23 2018
+# vmap usim usim 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6e Compiler 2018.06 Jun 23 2018
+# Start time: 17:02:56 on Apr 02,2022
+# vlog -reportprogress 300 "+define+SIM_ON" "+incdir+../bench/src/m1_core" "+incdir+../bench/src/logical/cmsdk_apb_watchdog/verilog" "+incdir+../bench/src/logical/cmsdk_apb_i2c/verilog" "+incdir+../pnr/ipcore/DDR3/example_design/bench/mem" -f file_list.f -l vlog.log 
+# -- Compiling module m1_test
+# -- Compiling module m1_soc_top
+# -- Compiling module rst_gen
+# -- Compiling module axi1_wr_test
+# -- Compiling module cmsdk_ahb_mem
+# -- Compiling module ipml_sdpram_v1_5_TEST_RAM
+# -- Compiling module TEST_RAM
+# -- Compiling module ipml_sdpram_v1_5_DCACHE_SRAM0
+# -- Compiling module DCACHE_SRAM0
+# -- Compiling module ipml_sdpram_v1_5_DCACHE_SRAM1
+# -- Compiling module DCACHE_SRAM1
+# -- Compiling module ipml_sdpram_v1_5_DCACHE_SRAM2
+# -- Compiling module DCACHE_SRAM2
+# -- Compiling module ipml_sdpram_v1_5_DCACHE_SRAM3
+# -- Compiling module DCACHE_SRAM3
+# -- Compiling module ipml_sdpram_v1_5_DCACHE_TAG
+# -- Compiling module DCACHE_TAG
+# -- Compiling module ipml_sdpram_v1_5_ICACHE_INS0
+# -- Compiling module ICACHE_INS0
+# -- Compiling module ipml_sdpram_v1_5_ICACHE_INS1
+# -- Compiling module ICACHE_INS1
+# -- Compiling module ipml_sdpram_v1_5_ICACHE_TAG0
+# -- Compiling module ICACHE_TAG0
+# -- Compiling module ipml_sdpram_v1_5_ICACHE_TAG1
+# -- Compiling module ICACHE_TAG1
+# -- Compiling module ipml_sdpram_v1_5_RX_RING
+# -- Compiling module RX_RING
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_fifo_v1_5_RX_FIFO
+# -- Compiling module ipml_prefetch_fifo_v1_5_RX_FIFO
+# -- Compiling module ipml_reg_fifo_v1_0
+# -- Compiling module ipml_sdpram_v1_5_RX_FIFO
+# -- Compiling module RX_FIFO
+# ** Warning: ../pnr/ipcore/TX_FIFO/rtl/ipml_fifo_ctrl_v1_3.v(21): (vlog-2275) 'ipml_fifo_ctrl_v1_3' already exists and will be overwritten.
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_fifo_v1_5_TX_FIFO
+# -- Compiling module ipml_prefetch_fifo_v1_5_TX_FIFO
+# ** Warning: ../pnr/ipcore/TX_FIFO/rtl/ipml_reg_fifo_v1_0.v(6): (vlog-2275) 'ipml_reg_fifo_v1_0' already exists and will be overwritten.
+# -- Compiling module ipml_reg_fifo_v1_0
+# -- Compiling module ipml_sdpram_v1_5_TX_FIFO
+# -- Compiling module TX_FIFO
+# -- Compiling module ddr3
+# -- Compiling module pll_50_400_v1_1
+# -- Compiling module ipsl_hmic_h_ddrc_apb_reset_v1_1
+# -- Compiling module ipsl_hmic_h_ddrc_reset_ctrl_v1_1
+# -- Compiling module ipsl_hmic_h_ddrphy_dll_update_ctrl_v1_1
+# -- Compiling module ipsl_hmic_h_ddrphy_reset_ctrl_v1_1
+# -- Compiling module ipsl_hmic_h_ddrphy_training_ctrl_v1_1
+# -- Compiling module ipsl_hmic_h_ddrphy_update_ctrl_v1_1
+# -- Compiling module ipsl_hmic_h_ddrc_top_v1_1
+# -- Compiling module ipsl_hmic_h_phy_top_v1_1
+# -- Compiling module ipsl_hmic_h_phy_io_v1_1
+# -- Compiling module DDR3
+# ** Warning: ../pnr/ipcore/TSMAC_FIFO_RXCKLI/rtl/ipml_fifo_ctrl_v1_3.v(21): (vlog-2275) 'ipml_fifo_ctrl_v1_3' already exists and will be overwritten.
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_fifo_v1_5_TSMAC_FIFO_RXCKLI
+# -- Compiling module ipml_prefetch_fifo_v1_5_TSMAC_FIFO_RXCKLI
+# ** Warning: ../pnr/ipcore/TSMAC_FIFO_RXCKLI/rtl/ipml_reg_fifo_v1_0.v(6): (vlog-2275) 'ipml_reg_fifo_v1_0' already exists and will be overwritten.
+# -- Compiling module ipml_reg_fifo_v1_0
+# -- Compiling module ipml_sdpram_v1_5_TSMAC_FIFO_RXCKLI
+# -- Compiling module TSMAC_FIFO_RXCKLI
+# -- Compiling module PGL_SDPRAM_11
+# -- Compiling module ipml_sdpram_v1_5_PGL_SDPRAM_11
+# -- Compiling module tsmac_phy
+# -- Compiling module pgs_tsmac_gmii_to_rgmii_v1_0
+# -- Compiling module pgs_tsmac_rgmii_gmii_convert_v1_0
+# -- Compiling module pgs_tsmac_rgmii_to_gmii_v1_0
+# -- Compiling module pgs_tsmac_core_v1_1
+# -- Compiling module pgs_tsmac_rx_sm_v1_1
+# -- Compiling module pgs_tsmac_apb_modify_v1_0
+# -- Compiling module pgs_tsmac_apb_port_v1_0
+# -- Compiling module tsmac_data_ram_v1_1
+# -- Compiling module pgm_sdpram_v1_1
+# -- Compiling module GTP_DRM18K_WRAPPER
+# ** Warning: ../pnr/ipcore/ex_data_fifo/rtl/ipml_fifo_ctrl_v1_3.v(21): (vlog-2275) 'ipml_fifo_ctrl_v1_3' already exists and will be overwritten.
+# -- Compiling module ipml_fifo_ctrl_v1_3
+# -- Compiling module ipml_fifo_v1_5_ex_data_fifo
+# -- Compiling module ipml_prefetch_fifo_v1_5_ex_data_fifo
+# ** Warning: ../pnr/ipcore/ex_data_fifo/rtl/ipml_reg_fifo_v1_0.v(6): (vlog-2275) 'ipml_reg_fifo_v1_0' already exists and will be overwritten.
+# -- Compiling module ipml_reg_fifo_v1_0
+# -- Compiling module ipml_sdpram_v1_5_ex_data_fifo
+# -- Compiling module ex_data_fifo
+# 
+# Top level modules:
+# 	m1_test
+# 	ipml_prefetch_fifo_v1_5_RX_FIFO
+# 	ipml_prefetch_fifo_v1_5_TX_FIFO
+# 	ipml_prefetch_fifo_v1_5_TSMAC_FIFO_RXCKLI
+# 	tsmac_data_ram_v1_1
+# 	ipml_prefetch_fifo_v1_5_ex_data_fifo
+# End time: 17:02:58 on Apr 02,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 6

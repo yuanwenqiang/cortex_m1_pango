@@ -193,7 +193,7 @@ localparam DFI_CLK_PERIOD = 4000000 / 1000.0;
 //MR0_DDR3
 localparam [0:0] DDR3_PPD      = 1'b1;
 
-localparam [2:0] DDR3_WR       =  8 - 4; 
+localparam [2:0] DDR3_WR       =  8 - 4;  
 
 localparam [0:0] DDR3_DLL      = 1'b1;
 localparam [0:0] DDR3_TM       = 1'b0;
@@ -221,7 +221,7 @@ localparam [1:0] DDR3_RTT_WR   = 2'b00;
 localparam [0:0] DDR3_SRT      = 1'b0;
 localparam [0:0] DDR3_ASR      = 1'b0;
 
-localparam [2:0] DDR3_CWL      = 6 - 5;
+localparam [2:0] DDR3_CWL      = 6 - 5;  
 
 localparam [2:0] DDR3_PASR     = 3'b000;
 localparam [15:0] MR2_DDR3     = {5'b00000, DDR3_RTT_WR, 1'b0, DDR3_SRT, DDR3_ASR, DDR3_CWL, DDR3_PASR};

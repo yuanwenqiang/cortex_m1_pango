@@ -6,6 +6,7 @@ create_clock -name {clk_in_50m} [get_ports {ex_clk_50m}] -period {20} -waveform 
 
 ###==== BEGIN "create_generated_clock"
 create_generated_clock -name {pclk} -source [get_ports {ex_clk_50m}] [get_pins {u_DDR3.u_pll_50_400.clkout1}] -master_clock [get_clocks {clk_in_50m}] -multiply_by {1}
+
 create_generated_clock -name {axi_clk0} -source [get_ports {ex_clk_50m}] [get_pins {u_DDR3.u_pll_50_400.clkout2}] -master_clock [get_clocks {clk_in_50m}] -multiply_by {2}
 ###==== END "create_generated_clock"
 
@@ -856,73 +857,255 @@ define_attribute {p:i2c0_sda} {PAP_IO_SLEW} {FAST}
 define_attribute {p:i2c0_sda} {PAP_IO_DRIVE} {4}
 define_attribute {p:i2c0_sda} {PAP_IO_HYS_DRIVE_MODE} {NOHYS}
 define_attribute {p:TX} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:finish_flag} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:finish_flag} {PAP_IO_LOC} {T11}
-#define_attribute {p:finish_flag} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:finish_flag} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:finish_flag} {PAP_IO_DRIVE} {4}
-#define_attribute {p:finish_flag} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:req_flag} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:req_flag} {PAP_IO_LOC} {R11}
-#define_attribute {p:req_flag} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:req_flag} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:req_flag} {PAP_IO_DRIVE} {4}
-#define_attribute {p:req_flag} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:finish_flag} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:req_flag} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[7]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[7]} {PAP_IO_LOC} {R14}
-#define_attribute {p:addr_test[7]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[7]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[7]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[7]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[7]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[6]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[6]} {PAP_IO_LOC} {R15}
-#define_attribute {p:addr_test[6]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[6]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[6]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[6]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[6]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[5]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[5]} {PAP_IO_LOC} {P14}
-#define_attribute {p:addr_test[5]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[5]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[5]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[5]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[5]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[4]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[4]} {PAP_IO_LOC} {P13}
-#define_attribute {p:addr_test[4]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[4]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[4]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[4]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[4]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[3]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[3]} {PAP_IO_LOC} {R13}
-#define_attribute {p:addr_test[3]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[3]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[3]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[3]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[3]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[2]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[2]} {PAP_IO_LOC} {T13}
-#define_attribute {p:addr_test[2]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[2]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[2]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[2]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[2]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[1]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[1]} {PAP_IO_LOC} {P11}
-#define_attribute {p:addr_test[1]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[1]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[1]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[1]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[1]} {PAP_IO_SLEW} {FAST}
-#define_attribute {p:addr_test[0]} {PAP_IO_DIRECTION} {OUTPUT}
-#define_attribute {p:addr_test[0]} {PAP_IO_LOC} {P12}
-#define_attribute {p:addr_test[0]} {PAP_IO_VCCIO} {3.3}
-#define_attribute {p:addr_test[0]} {PAP_IO_STANDARD} {LVCMOS33}
-#define_attribute {p:addr_test[0]} {PAP_IO_DRIVE} {4}
-#define_attribute {p:addr_test[0]} {PAP_IO_PULLUP} {TRUE}
-#define_attribute {p:addr_test[0]} {PAP_IO_SLEW} {FAST}
+
+define_attribute {p:lcd_b[0]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[0]} {PAP_IO_LOC} {T18}
+define_attribute {p:lcd_b[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[0]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[0]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[0]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[0]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[1]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[1]} {PAP_IO_LOC} {T17}
+define_attribute {p:lcd_b[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[1]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[1]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[1]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[1]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[2]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[2]} {PAP_IO_LOC} {U18}
+define_attribute {p:lcd_b[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[2]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[2]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[2]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[2]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[3]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[3]} {PAP_IO_LOC} {U17}
+define_attribute {p:lcd_b[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[3]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[3]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[3]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[3]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[4]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[4]} {PAP_IO_LOC} {M14}
+define_attribute {p:lcd_b[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[4]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[4]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[4]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[4]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[4]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[5]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[5]} {PAP_IO_LOC} {M13}
+define_attribute {p:lcd_b[5]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[5]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[5]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[5]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[5]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[5]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[6]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[6]} {PAP_IO_LOC} {L15}
+define_attribute {p:lcd_b[6]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[6]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[6]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[6]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[6]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[6]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_b[7]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_b[7]} {PAP_IO_LOC} {L14}
+define_attribute {p:lcd_b[7]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_b[7]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_b[7]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_b[7]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_b[7]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_b[7]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_dclk} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_dclk} {PAP_IO_LOC} {L18}
+define_attribute {p:lcd_dclk} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_dclk} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_dclk} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_dclk} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_dclk} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_dclk} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_de} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_de} {PAP_IO_LOC} {L17}
+define_attribute {p:lcd_de} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_de} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_de} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_de} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_de} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_de} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[0]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[0]} {PAP_IO_LOC} {R15}
+define_attribute {p:lcd_g[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[0]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[0]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[0]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[0]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[1]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[1]} {PAP_IO_LOC} {R14}
+define_attribute {p:lcd_g[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[1]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[1]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[1]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[1]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[2]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[2]} {PAP_IO_LOC} {T16}
+define_attribute {p:lcd_g[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[2]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[2]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[2]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[2]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[3]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[3]} {PAP_IO_LOC} {R16}
+define_attribute {p:lcd_g[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[3]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[3]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[3]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[3]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[4]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[4]} {PAP_IO_LOC} {U16}
+define_attribute {p:lcd_g[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[4]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[4]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[4]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[4]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[4]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[5]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[5]} {PAP_IO_LOC} {V16}
+define_attribute {p:lcd_g[5]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[5]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[5]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[5]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[5]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[5]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[6]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[6]} {PAP_IO_LOC} {V18}
+define_attribute {p:lcd_g[6]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[6]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[6]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[6]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[6]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[6]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_g[7]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_g[7]} {PAP_IO_LOC} {V17}
+define_attribute {p:lcd_g[7]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_g[7]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_g[7]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_g[7]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_g[7]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_g[7]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_hs} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_hs} {PAP_IO_LOC} {N18}
+define_attribute {p:lcd_hs} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_hs} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_hs} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_hs} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_hs} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_hs} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[0]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[0]} {PAP_IO_LOC} {T11}
+define_attribute {p:lcd_r[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[0]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[0]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[0]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[0]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[1]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[1]} {PAP_IO_LOC} {R11}
+define_attribute {p:lcd_r[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[1]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[1]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[1]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[1]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[2]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[2]} {PAP_IO_LOC} {P12}
+define_attribute {p:lcd_r[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[2]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[2]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[2]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[2]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[3]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[3]} {PAP_IO_LOC} {P11}
+define_attribute {p:lcd_r[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[3]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[3]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[3]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[3]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[4]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[4]} {PAP_IO_LOC} {T13}
+define_attribute {p:lcd_r[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[4]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[4]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[4]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[4]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[4]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[5]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[5]} {PAP_IO_LOC} {R13}
+define_attribute {p:lcd_r[5]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[5]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[5]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[5]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[5]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[5]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[6]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[6]} {PAP_IO_LOC} {P13}
+define_attribute {p:lcd_r[6]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[6]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[6]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[6]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[6]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[6]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_r[7]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_r[7]} {PAP_IO_LOC} {P14}
+define_attribute {p:lcd_r[7]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_r[7]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_r[7]} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_r[7]} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_r[7]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_r[7]} {PAP_IO_OPEN_DRAIN} {OFF}
+
+define_attribute {p:lcd_vs} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:lcd_vs} {PAP_IO_LOC} {N16}
+define_attribute {p:lcd_vs} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:lcd_vs} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:lcd_vs} {PAP_IO_DRIVE} {4}
+define_attribute {p:lcd_vs} {PAP_IO_PULLUP} {TRUE}
+define_attribute {p:lcd_vs} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:lcd_vs} {PAP_IO_OPEN_DRAIN} {OFF}

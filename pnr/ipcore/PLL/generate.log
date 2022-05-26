@@ -1,7 +1,7 @@
 IP Generator (Version 2020.3 build 62942)
 Check out license ...
-Start generating at 2021-06-04 13:03
-Instance: PLL (C:\Users\1\Desktop\jc\SD_Int_5_23\pnr\ipcore\PLL\PLL.idf)
+Start generating at 2022-05-26 14:40
+Instance: PLL (F:\pro\pango_pro\FPGA_Pro\pnr\ipcore\PLL\PLL.idf)
 Model: Logos PLL (1.5)
 Part: Logos-PGL22G-MBG324--6
 Create directory 'rtl' ...

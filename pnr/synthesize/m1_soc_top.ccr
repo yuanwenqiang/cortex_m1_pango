@@ -1,4 +1,4 @@
-##### Written on 2021/06/09 23:05:41 ###############################
+##### Written on 2022/05/26 16:50:36 ###############################
 
 
 ##### DESIGN INFO ##################################################
@@ -7,12 +7,12 @@ Top Module:
 	m1_soc_top
 
 Constraint File(s):
-	C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc
+	F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc
 	
 
 ##### SUMMARY ######################################################
 
-Found 0 error(s), 14 critical warning(s), 0 warning(s), out of 714 constraint(s)
+Found 0 error(s), 14 critical warning(s), 0 warning(s), out of 938 constraint(s)
 
 
 Inapplicable constraints(except overwritten constraints):
@@ -29,41 +29,41 @@ Constraints with issues:
 
 
 define_attribue {RX} {PAP_IO_LOC} {A12}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 576)] | Port RX has been placed at location A12, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 577)] | Port RX has been placed at location A12, whose type is share pin.
 
 define_attribue {cmos_db[0]} {PAP_IO_LOC} {E18}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 632)] | Port cmos_db[0] has been placed at location E18, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 633)] | Port cmos_db[0] has been placed at location E18, whose type is share pin.
 
 define_attribue {cmos_db[1]} {PAP_IO_LOC} {D18}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 639)] | Port cmos_db[1] has been placed at location D18, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 640)] | Port cmos_db[1] has been placed at location D18, whose type is share pin.
 
 define_attribue {cmos_db[2]} {PAP_IO_LOC} {F14}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 646)] | Port cmos_db[2] has been placed at location F14, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 647)] | Port cmos_db[2] has been placed at location F14, whose type is share pin.
 
 define_attribue {cmos_db[4]} {PAP_IO_LOC} {E17}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 660)] | Port cmos_db[4] has been placed at location E17, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 661)] | Port cmos_db[4] has been placed at location E17, whose type is share pin.
 
 define_attribue {cmos_db[5]} {PAP_IO_LOC} {D17}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 667)] | Port cmos_db[5] has been placed at location D17, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 668)] | Port cmos_db[5] has been placed at location D17, whose type is share pin.
 
 define_attribue {cmos_db[6]} {PAP_IO_LOC} {G14}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 674)] | Port cmos_db[6] has been placed at location G14, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 675)] | Port cmos_db[6] has been placed at location G14, whose type is share pin.
 
 define_attribue {cmos_db[7]} {PAP_IO_LOC} {G13}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 681)] | Port cmos_db[7] has been placed at location G13, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 682)] | Port cmos_db[7] has been placed at location G13, whose type is share pin.
 
 define_attribue {cmos_href} {PAP_IO_LOC} {H14}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 688)] | Port cmos_href has been placed at location H14, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 689)] | Port cmos_href has been placed at location H14, whose type is share pin.
 
 define_attribue {spi0_miso} {PAP_IO_LOC} {A4}
-	C: ConstraintEditor-2002: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 626)] | Port spi0_miso has been placed at location A4, whose type is share pin.
+	C: ConstraintEditor-2002: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc(line number: 627)] | Port spi0_miso has been placed at location A4, whose type is share pin.
 
 
 
-C: ConstraintEditor-2006: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port TX lack of drive, output port and inout port had better set drive value, the default value is 4.
-C: ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.
-C: ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.
-C: ConstraintEditor-2007: [C:/Users/1/Desktop/jc/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2006: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port TX lack of drive, output port and inout port had better set drive value, the default value is 4.
+C: ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_clk lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_cs lack of slew, output port and inout port had better set slew value, the default value is SLOW.
+C: ConstraintEditor-2007: [F:/pro/pango_pro/FPGA_Pro/pnr/source/M1_SoC_TOP.fdc] Port spi0_mosi lack of slew, output port and inout port had better set slew value, the default value is SLOW.
 
 
 
